@@ -38,7 +38,8 @@ header {
 #bottom-header {
     font-size: .8rem;
     padding: 1rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #858585;
+    background-color: #f7f7f7;
 }
 
 #bottom-header h3{
@@ -185,4 +186,26 @@ header {
 
 .selected {
     outline: 2px solid #43a1ff;
+}
+
+@media (max-width: 480px) {
+    #navbar{
+        
+    }
+    #navbar li {
+        display: none;
+    }
+
+    #navbar #logo {
+        display: flex;
+    }
+
+    #bottom-header-links a{
+        display: none;
+    }
+
+    #main-content {
+        padding: 2rem;
+        overflow: hidden;
+    }
 }
