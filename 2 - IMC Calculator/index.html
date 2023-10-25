@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>BMI Calcultor</title>
+</head>
+<body>
+    <div class="container">
+        <div id="operation-container">
+            <h2>BMI Calculator</h2>
+            <form action="" id="bmi-form">
+                <div class="form-inputs">
+                    <div class="form-control">
+                        <label for="height">Height:</label>
+                        <input 
+                            type="text"
+                            name="height"
+                            id="height"
+                            placeholder="Example 1,75">
+                    </div>
+                </div>
+                <div class="form-inputs">
+                    <div class="form-control">
+                        <label for="weight">Weight:</label>
+                        <input 
+                            type="text"
+                            name="weight"
+                            id="weight"
+                            placeholder="Example 80,5">
+                    </div>
+                </div>
+                <div class="action-control">
+                    <button id="calc-btn">Calculate</button>
+                    <button id="clear-btn">Clear</button>
+                </div>
+            </form>
+        </div>
+        <div id="result-container" class="hide">
+            <p id="bmi-number">Your BMI: <span></span></p>
+            <p id="bmi-info">Current situation: <span></span></p>
+            <h3>All Situations:</h3>
+            <div id="bmi-table">
+                <div class="table-header">
+                    <h4>BMI</h4>
+                    <h4>Classification</h4>
+                    <h4>Obesity</h4>
+                </div>
+            </div>
+            <button id="back-btn">Back</button>
+        </div>
+    </div>
+</body>
+</html>
