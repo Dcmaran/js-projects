@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100vh;
+}
+
 body {
     background-image: url("https://images3.alphacoders.com/108/1089218.jpg");
     background-size: cover;
