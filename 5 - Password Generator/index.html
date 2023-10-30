@@ -34,13 +34,36 @@
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" placeholder="Enter your password">
             </div>
-            <p>Want help to create a strong password? <span id="generate-password">Click here</span></p>
+            <p>Want help to create a strong password? <span id="open-generate-password">Click here</span></p>
+
+            <div id="generate-options" class="hide">
+                <p>Select options</p>
+                <div class="form-control">
+                    <label for="lenght">Characters:</label>
+                    <input type="text" name="lenght" id="lenght" value="10">
+                </div>
+                <div class="form-control">
+                    <label for="letters">Letters: </label>
+                    <input type="checkbox" name="letters" id="letters" checked>
+                </div>
+                <div class="form-control">
+                    <label for="numbers">Numbers:</label>
+                    <input type="checkbox" name="numbers" id="numbers" checked>
+                </div>
+                <div class="form-control">
+                    <label for="symbols">Numbers:</label>
+                    <input type="checkbox" name="symbols" id="symbols" checked>
+                </div>
+                <button id="generate-password">Create Password</button>
+            </div>
+
             <div id="generated-password">
-                <p>Here is your passowrd</p>
+                <p>Here is your password</p>
                 <h4></h4>
+                <button id="copy-password">Copy Password</button>
             </div>
             <div class="form-control">
-                <label for="confirm-password">Confirm Password</label>
+                <label for="confirm-password"></label>
                 <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password">
             </div>
             <div class="form-control">
