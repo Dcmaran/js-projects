@@ -43,12 +43,38 @@
             </div>
             <div class="form-control">
                 <div class="range-input">
-                    <label for="spread">Spread intensity</label>
+                    <label for="spread">Spread intensity:</label>
                     <input type="range" id="spread" name="spread" min="-100" max="100" value="5">
                 </div>
                 <div class="reference-input">
                     <input type="text" id="spread-value" name="spread-value">
                     <p>px</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="range-input">
+                    <label for="color">Shadow Color:</label>
+                    <input type="color" id="color" name="color" value="#00000">
+                </div>
+                <div class="reference-input">
+                    <input type="text" id="color-value" name="color-value">
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="range-input">
+                    <label for="opacity">Spread intensity:</label>
+                    <input type="range" id="opacity" name="opacity" min="0" max="1" value="1" step="0.01">
+                </div>
+                <div class="reference-input">
+                    <input type="text" id="opacity-value" name="opacity-value">
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <div id="inset-container">
+                    <label for="opacity">Intern Shadow? (Inset) </label>
+                    <input type="checkbox" name="inset" id="inset">
                 </div>
             </div>
         </div>
@@ -64,6 +90,7 @@
             <p id="webkit-rule">-webkit-box-shadow <span></span</p>
             <p id="moz-rule">-moz-box-shadow <span></span</p>
         </div>
+        <p id="copy-instructions">Click on the table above to copy the rules</p>
     </div>
 </body>
 </html>

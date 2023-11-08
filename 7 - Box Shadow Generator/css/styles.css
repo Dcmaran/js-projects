@@ -95,4 +95,52 @@ h2 {
     max-width: 1000px;
     border: 2px solid #e9d30a;
     padding: 1rem;
+    transition: .4s;
+    cursor: pointer;
+}
+
+#rules-area:hover {
+    background-color: #dfdfdf;
+}
+
+#color-value {
+    min-width: 100px;
+}
+
+#copy-instructions {
+    padding: 1rem;
+    font-style: italic;
+}
+
+#inset {
+    align-self: start;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+}
+
+#inset-container label{
+    margin-right: 20px;
+}
+
+@media (max-width: 425px) {
+    
+    #box-shadow-generator {
+        flex-direction: column;
+    }
+
+    #controls-container,
+    #preview {
+        padding: 1rem 2rem;
+    }
+
+    #box {
+        width: 60%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    #generated-rule {
+        margin-top: 2rem;
+    }
 }
